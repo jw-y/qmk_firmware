@@ -5,6 +5,7 @@
 #define _LAYER2 2
 #define _LAYER3 3
 #define _LAYER4 4
+#define _LAYER5 5
 
 #define _BL 0
 #define _FL1 1
@@ -90,7 +91,7 @@ void rgb_matrix_indicators_user(void) {
 	if (!g_suspend_state && rgb_matrix_config.enable) {
 		switch (biton32(layer_state)) {
 			case _LAYER1:
-				rgb_matrix_layer_helper(0xFF, 0x00, 0x00, false);
+				rgb_matrix_layer_helper(0x67, 0x02, 0x11, false); //burgundy
 				break;
 			case _LAYER2:
 				rgb_matrix_layer_helper(0x00, 0xFF, 0x00, false); 
@@ -99,6 +100,8 @@ void rgb_matrix_indicators_user(void) {
 				rgb_matrix_layer_helper(0x00, 0x00, 0xFF, false); break;
 			case _LAYER4:
 				rgb_matrix_layer_helper(0xFF, 0xFF, 0x00, false); break;
+			case _LAYER5:
+				rgb_matrix_layer_helper(0xFF, 0x00, 0xFF, false); break;
 		}
 	}
 	if ( this_led & (1<<USB_LED_CAPS_LOCK)) {
