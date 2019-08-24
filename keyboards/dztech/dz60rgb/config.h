@@ -20,7 +20,7 @@
 
 #define DIODE_DIRECTION COL2ROW
 
-#define DEBOUNCE 3
+#define DEBOUNCE 5
 #define RGB_DISABLE_AFTER_TIMEOUT 0 // number of ticks to wait until disabling effects
 #define RGB_DISABLE_WHEN_USB_SUSPENDED true // turn off effects when suspended
 #define RGB_MATRIX_KEYPRESSES
