@@ -21,7 +21,8 @@ Copyright jungwoo
 #define _______ KC_TRNS
 #define XXXXXXX KC_NO
 
-#define GSpace GUI_T(KC_SPC)
+//#define GSpace GUI_T(KC_SPC)
+#define GSpace KC_SPC
 #define GTab GUI_T(KC_TAB)
 
 #define LTap LT(_FL4,KC_TAB)
