@@ -34,6 +34,7 @@ Copyright jungwoo
 #define CtrV LCTL(KC_V)
 #define CtrF LCTL(KC_F)
 #define CtrT LCTL(KC_T)
+#define CtrB LCTL(KC_B)
 
 #define FN_F24 LM(_FL1, KC_F24)
 
@@ -75,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,     KC_DEL,  \
   KC_CAPS,  KC_WBAK,	 KC_UP,   CtrW, KC_WREF,    CtrT, _______, KC_HOME,   KC_UP,  KC_END, _______, KC_VOLD, KC_VOLU,  _______, \
   _______,  KC_LEFT, KC_DOWN, KC_RIGHT,    CtrF, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, _______,_______,_______, \
-  KC_LSFT,      CtrZ,    CtrX,    CtrC,    CtrV,  _______, KC_PGDN, _______, BL_TOGG,  BL_STEP,  BL_BRTG,KC_RSFT, \
+  KC_LSFT,      CtrZ,    CtrX,    CtrC,    CtrV,    CtrB, KC_PGDN, _______, BL_TOGG,  BL_STEP,  BL_BRTG,KC_RSFT, \
   _______,_______,_______,                _______,                        _______,_______,_______,_______),
   
   /* Keymap _FL2: Function Layer
