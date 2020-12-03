@@ -33,6 +33,7 @@ Copyright jungwoo
 #define CtrC LCTL(KC_C)
 #define CtrV LCTL(KC_V)
 #define CtrF LCTL(KC_F)
+#define CtrG LCTL(KC_G)
 #define CtrT LCTL(KC_T)
 #define CtrB LCTL(KC_B)
 
@@ -65,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |-----------------------------------------------------------|
    * | CAPS|   | UP|CrW|Ref|CrT|   |Hom| UP|End|   |Vdn|Vup|     |
    * |-----------------------------------------------------------|
-   * |      |Lef|Dow|Rig|CrF|   |PgU|Lef|Dow|Rig|   |   |        |
+   * |      |Lef|Dow|Rig|CrF|CrG|PgU|Lef|Dow|Rig|   |   |        |
    * |-----------------------------------------------------------|
    * |Shift   |CrZ|CrX|CrC|CrV|   |PgD|   | BL|BLS|BLB|          |
    * |-----------------------------------------------------------|
@@ -75,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FL1] = LAYOUT_60_ansi(
   KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,     KC_DEL,  \
   KC_CAPS,  KC_WBAK,	 KC_UP,   CtrW, KC_WREF,    CtrT, _______, KC_HOME,   KC_UP,  KC_END, _______, KC_VOLD, KC_VOLU,  _______, \
-  _______,  KC_LEFT, KC_DOWN, KC_RIGHT,    CtrF, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, _______,_______,_______, \
+  _______,  KC_LEFT, KC_DOWN, KC_RIGHT,    CtrF,    CtrG, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, _______,_______,_______, \
   KC_LSFT,      CtrZ,    CtrX,    CtrC,    CtrV,    CtrB, KC_PGDN, _______, BL_TOGG,  BL_STEP,  BL_BRTG,KC_RSFT, \
   _______,_______,_______,                _______,                        _______,_______,_______,_______),
   
@@ -115,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FL3] = LAYOUT_60_ansi(
   KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,     KC_DEL,  \
   KC_CAPS,  _______,	 KC_UP,   CtrW, KC_WREF,    CtrT, _______, KC_HOME,   KC_UP,  KC_END, _______, KC_VOLD, KC_VOLU,  _______, \
-  _______,  KC_LEFT, KC_DOWN, KC_RIGHT,    CtrF, _______, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, _______,_______,_______, \
+  _______,  KC_LEFT, KC_DOWN, KC_RIGHT,    CtrF,    CtrG, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, _______,_______,_______, \
   KC_LSFT,      CtrZ,    CtrX,    CtrC,    CtrV,  _______, KC_PGDN, _______, BL_TOGG,  BL_STEP,  BL_BRTG,  RESET, \
   _______,_______,_______,                _______,                        _______,_______,_______,_______),
 
@@ -133,9 +134,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-----------------------------------------------------------'
    */
 [_FL4] = LAYOUT_60_ansi(
-  _______, _______, _______, _______, _______, _______, _______,    KC_7,     KC_8,     KC_9, _______, _______, _______, _______,  \
-  _______, _______, KC_VOLD, KC_VOLU, _______, _______, _______,   KC_4,   KC_5,   KC_6, _______, KC_VOLD, KC_VOLU,  _______, \
-  _______,  KC_MPRV, KC_MPLY, KC_MNXT, _______, _______,    KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
+  _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, _______,    KC_7,     KC_8,     KC_9, _______, _______, _______, _______,  \
+  _______, KC_VOLD, KC_VOLU, KC_PGUP, _______, _______, _______,   KC_4,   KC_5,   KC_6, _______, KC_VOLD, KC_VOLU,  _______, \
+  _______,  _______, _______, KC_PGDN, _______, _______,    KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
   _______,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   _______, \
   _______,_______,_______,                _______,                        _______,_______,_______,_______),
   
