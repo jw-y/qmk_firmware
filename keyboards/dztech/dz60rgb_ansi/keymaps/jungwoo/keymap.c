@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_NO, KC_NO, _______,					KC_NO, 			KC_NO, KC_TRNS, KC_TRNS, KC_NO),
 	[2] = LAYOUT_60_ansi(
 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
-		KC_NO, RGB_TOG, KC_NO, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, RGB_VAD, RGB_VAI, RGB_RMOD, RGB_MOD, KC_NO, KC_NO, KC_NO, \
+		KC_NO, RGB_TOG, KC_NO, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, RGB_VAD, RGB_VAI, KC_NO, KC_NO, RGB_RMOD, RGB_MOD, KC_NO, \
 		KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RGB_SPD, RGB_SPI, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
 		KC_NO, RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_M_K, RGB_M_X, RGB_M_G, KC_NO, KC_NO, KC_TRNS, 
 		KC_NO, KC_NO, KC_NO, 					KC_NO,			KC_NO, KC_TRNS, KC_TRNS, KC_NO),
@@ -68,9 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_NO, KC_NO, KC_NO, 					KC_NO, 			KC_NO, KC_TRNS, KC_NO, KC_NO),
 
 	[_FL5] = LAYOUT_60_ansi(
-		_______, _______, _______, _______, _______, _______, _______, 	KC_7, 	KC_8,	KC_9, _______, _______, _______, _______,  \
-		_______, _______,    WinL,    WinR, KC_VOLU, _______, _______,   KC_4,   KC_5,   KC_6, _______, KC_VOLD, KC_VOLU,  _______, \
-		_______,  KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLD, _______, 	KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
+		_______, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, _______, 	KC_7, 	KC_8,	KC_9, _______, _______, _______, _______,  \
+		_______, KC_VOLD, KC_VOLU, KC_PGUP, _______, _______, _______,   KC_4,   KC_5,   KC_6, _______, KC_VOLD, KC_VOLU,  _______, \
+		_______,     WinL,   WinR, KC_PGDN, _______, _______, 	KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
 		_______,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   _______, \
 		_______,_______,_______,                _______,                        _______,_______,_______,_______),
 
