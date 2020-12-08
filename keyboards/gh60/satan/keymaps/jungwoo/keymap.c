@@ -37,6 +37,9 @@ Copyright jungwoo
 #define CtrT LCTL(KC_T)
 #define CtrB LCTL(KC_B)
 
+#define WinL LCTL(LGUI(KC_LEFT))
+#define WinR LCTL(LGUI(KC_RGHT))
+
 #define FN_F24 LM(_FL1, KC_F24)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -136,7 +139,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_FL4] = LAYOUT_60_ansi(
   _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, _______,    KC_7,     KC_8,     KC_9, _______, _______, _______, _______,  \
   _______, KC_VOLD, KC_VOLU, KC_PGUP, _______, _______, _______,   KC_4,   KC_5,   KC_6, _______, KC_VOLD, KC_VOLU,  _______, \
-  _______,  _______, _______, KC_PGDN, _______, _______,    KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
+  _______,    WinL,    WinR, KC_PGDN, _______, _______,    KC_0,   KC_1,   KC_2,   KC_3, _______,_______,_______, \
   _______,   _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,   _______, \
   _______,_______,_______,                _______,                        _______,_______,_______,_______),
   
